@@ -9,5 +9,5 @@ This is a Memory Tracker Android application
 
 Objectives:
   * Read *proc/meminfo*
-  * Read *proc/<pid>/statm*
+  * Read *proc/pid/statm*
   * Read *android.os.Debug.MemoryInfo[]*
