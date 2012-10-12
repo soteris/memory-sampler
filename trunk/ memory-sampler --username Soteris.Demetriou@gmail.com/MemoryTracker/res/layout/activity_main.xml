@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:text="@string/empty"
+        tools:context=".MainActivity" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:text="@string/empty"
+        tools:context=".MainActivity" />
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView2">
+	    <Button
+	        android:id="@+id/ButtonStartMem"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/textView2"
+	        android:layout_marginBottom="25dp"
+	        android:text="@string/start" />
+	    <Button
+	        android:id="@+id/ButtonStopMem"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/ButtonStartMem"
+	        android:layout_below="@+id/textView2"
+	        android:layout_marginBottom="25dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/stop" />
+	   <!--   <Button 
+	        android:id="@+id/ButtonTotPss"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/ButtonStopMem"
+	        android:layout_alignRight="@+id/textView1"
+	        android:layout_marginBottom="25dp"
+	        android:text="@string/totPss"/>
+	    <Button 
+	        android:id="@+id/ButtonMemInfoArr"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/ButtonTotPss"
+	        android:layout_alignRight="@+id/textView1"
+	        android:layout_marginBottom="25dp"
+	        android:text="@string/see_log_i"/>
+	    <Button 
+	        android:id="@+id/ButtonProcMem"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/ButtonMemInfoArr"
+	        android:layout_alignRight="@+id/textView1"
+	        android:layout_marginBottom="25dp"
+	        android:text="@string/proc_mem_button"/>
+	    <Button 
+	        android:id="@+id/ButtonProcMemPID"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/ButtonProcMem"
+	        android:layout_alignRight="@+id/textView1"
+	        android:layout_marginBottom="25dp"
+	        android:text="@string/proc_mem_button_PID"/>
+	        
+	-->
+	</RelativeLayout>
+</RelativeLayout>

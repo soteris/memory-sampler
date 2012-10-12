@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">MemoryTracker</string>
+    <string name="plot_name">MemoryTracker_Plot</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="empty"></string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+	<string name="totPss">Total PSS</string>
+	<string name="see_log_i">Get memoryInfoArray</string>
+	<string name="proc_mem_button">proc/meminfo</string>
+	<string name="proc_mem_button_PID">proc/pid/statm</string>
+</resources>
