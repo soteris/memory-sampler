@@ -1,0 +1,13 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+This is a Memory Tracker Android application
+
+
+= Details =
+
+Objectives:
+  * Read *proc/meminfo
+  * Read *proc/<pid>/statm
+  * Read *android.os.Debug.MemoryInfo[]
