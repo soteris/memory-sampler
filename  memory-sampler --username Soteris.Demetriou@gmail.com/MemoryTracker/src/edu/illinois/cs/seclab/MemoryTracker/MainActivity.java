@@ -1,5 +1,10 @@
 package edu.illinois.cs.seclab.MemoryTracker;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.util.LinkedList;
 
 import org.afree.chart.demo.activity.TimeSeriesChartDemo1Activity;
@@ -28,12 +33,34 @@ public class MainActivity extends Activity{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Process process = null;
         setContentView(R.layout.activity_main);
         findViews();       
         intent = new Intent(this, MemoryTrackService.class);
        // intentProc = new Intent(this, ProcPollingService.class);
         Log.i(TAG, "onCreate Main Activity");       
         registerButtons();
+//        try {
+//			 process = new ProcessBuilder()
+//				.command("netcfg")
+//				.redirectErrorStream(true)
+//				.start();
+//			
+//			InputStream in = process.getInputStream();
+//	    	OutputStream out = process.getOutputStream();
+//	    	
+//	    	BufferedReader reader = new BufferedReader(new InputStreamReader(in)); 
+//	    	Log.i(TAG, reader.readLine());
+//	    	
+//	    	//pid = "1848";
+//	  } catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		    //pid = null;
+//		}
+//	  finally {
+//		process.destroy();
+//	  }
     }
     
     private void findViews() {
